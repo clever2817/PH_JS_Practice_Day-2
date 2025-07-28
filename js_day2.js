@@ -105,3 +105,40 @@ else
 (num1 > num2) ? result = num1 * 2 : result = num1 + num2;
 
 console.log(result);
+
+
+// Problem 6 (Ticket Fare Calculator)
+
+let age = 18;
+
+let isStudent = false;
+
+let ticketFare = 800;
+
+if(age < 10)
+{
+    console.log("Free Ticket.");
+}
+
+else if(isStudent)
+{
+    let discountedFare = ticketFare * (50 / 100);
+
+    let finalFare = ticketFare - discountedFare;
+
+    console.log("Student's Ticket Fare: " + finalFare);
+}
+
+else if(age >= 60)
+{
+    let discountedFare = ticketFare * (15 / 100);
+
+    let finalFare = ticketFare - discountedFare;
+
+    console.log("Senior citizen's Ticket Fare: " + finalFare);
+}
+
+else
+{
+    console.log("Regular Ticket Fare: " + ticketFare);
+}
